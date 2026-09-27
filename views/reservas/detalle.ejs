@@ -1,0 +1,49 @@
+<article class="max-w-xl mx-auto bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+   <header class="border-b border-slate-100 pb-5 mb-6">
+      <div class="flex items-center justify-between mb-2">
+         <span
+            class="text-xs font-semibold uppercase tracking-wider text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full">
+            <%= reserva.sala %>
+         </span>
+         <span class="text-xs font-mono text-slate-400 font-medium">ID de Reserva: #<%= reserva.id %></span>
+      </div>
+      <h1 class="text-2xl font-extrabold text-slate-900">
+         <%= reserva.estudiante %>
+      </h1>
+      <p class="text-sm text-slate-500 mt-1">
+         <%= reserva.email %>
+      </p>
+   </header>
+
+   <dl class="space-y-4 text-sm mb-8">
+      <div class="flex justify-between py-2 border-b border-slate-50">
+         <dt class="font-medium text-slate-500">Fecha asignada:</dt>
+         <dd class="font-semibold text-slate-800">
+            <%= reserva.fecha %>
+         </dd>
+      </div>
+      <div class="flex justify-between py-2 border-b border-slate-50">
+         <dt class="font-medium text-slate-500">Turno de estudio:</dt>
+         <dd class="font-semibold text-slate-800">
+            <%= reserva.turno %>
+         </dd>
+      </div>
+      <div class="flex justify-between py-2 border-b border-slate-50">
+         <dt class="font-medium text-slate-500">Ocupación estimada:</dt>
+         <dd class="font-semibold text-slate-800">
+            <%= reserva.personas %>
+               <%= reserva.personas===1 ? 'persona' : 'personas' %>
+         </dd>
+      </div>
+   </dl>
+
+   <footer class="flex items-center justify-between gap-4 pt-4 border-t border-slate-100">
+      <a href="/reservas"
+         class="text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded p-1">
+         ← Volver al listado
+      </a>
+      <a href="/reservas/nueva" class="text-sm font-medium text-indigo-600 hover:text-indigo-800">
+         Crear otra reserva
+      </a>
+   </footer>
+</article>

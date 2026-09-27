@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>
+         <%= titulo %> · Reservas de Salas
+      </title>
+      <script src="https://cdn.tailwindcss.com"></script>
+   </head>
+
+   <body
+      class="bg-slate-50 text-slate-800 min-h-screen flex flex-col font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+      <%- include("../partials/encabezado") %>
+
+         <main class="flex-grow max-w-5xl w-full mx-auto px-4 py-8">
+            <%- body %>
+         </main>
+
+         <%- include("../partials/pie") %>
+
+   </body>
+
+</html>

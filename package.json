@@ -1,0 +1,26 @@
+{
+   "name": "tp-05-salas-middleware",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "start":"node --watch src/index.js",
+      "check":"node --check src/index.js && node --check src/archivos.js"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ErikBel404/tp-05-salas-middleware.git"
+   },
+   "keywords": [],
+   "type": "commonjs",
+   "bugs": {
+      "url": "https://github.com/ErikBel404/tp-05-salas-middleware/issues"
+   },
+   "homepage": "https://github.com/ErikBel404/tp-05-salas-middleware#readme",
+   "dependencies": {
+      "ejs": "^6.0.1",
+      "express": "^5.2.1",
+      "express-ejs-layouts": "^2.5.1",
+      "morgan": "^1.12.1"
+   }
+}
